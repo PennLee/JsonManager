@@ -8,9 +8,13 @@ $(document).ready(function(){
     read = function (){
         var file = fileInput.files[0]; //获取File引用
         var reader = new FileReader();
+
+        //onload表示reader读取文件完毕事件，下面是发生这个事件执行的回调函数
         reader.onload = function(e){
-            jsonText = this.result;
-            myobj = JSON.parse(jsonText);
+            jsonText = this.result; //取得读取的文件内容
+            myobj = JSON.parse(jsonText);  //把json文本转换为js对象
+
+            //each遍历对象数组
             $.each(myobj.data.record,function(i,n){
                 $('#table').append("<tr id="+i+"></tr>");
                 $('#'+i).append("<td>"+ n.productCode+"</td>")
