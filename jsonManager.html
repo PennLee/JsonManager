@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="jsonManager.css">
+    <script language="JavaScript" src="jquery-2.2.3.min.js"></script>
+    <script language="JavaScript" src="jsonManager.js"></script>
+</head>
+<body>
+<input id="file" type="file" />
+<input type="button" value="读取文件" onclick="read()" />
+<table id="table">
+    <tr>
+        <th>product<br>Code</th>
+        <th>productName</th>
+        <th>brandName</th>
+        <th width=30>brand<br>Code</th>
+        <th>brand<br>CnName</th>
+        <th>status</th>
+        <th>
+            <table>
+                <tr>
+                    <td colspan="3">seriesList</td>
+                </tr>
+                <tr>
+                    <td>color<br>ID</td>
+                    <td>color<br>Code</td>
+                    <td>color<br>Name</td>
+                </tr>
+            </table>
+        </th>
+        <th>
+            <table>
+                <tr>
+                    <td colspan="3">colorList</td>
+                </tr>
+                <tr>
+                    <td>color<br>ID</td>
+                    <td>color<br>Code</td>
+                    <td>color<br>Name</td>
+                </tr>
+            </table>
+        </th>
+        <th>
+            <table>
+                <tr>
+                    <td colspan="13">categoryList</td>
+                </tr>
+                <tr>
+                    <td>cate<br>Id1</td>
+                    <td>cate<br>Id2</td>
+                    <td>cate<br>Id3</td>
+                    <td>cate<br>Id4</td>
+                    <td>cate<br>Name1</td>
+                    <td>cate<br>Name2</td>
+                    <td>cate<br>Name3</td>
+                    <td>cate<br>Name4</td>
+                    <td>level</td>
+                    <td>img</td>
+                    <td>lenovos</td>
+                    <td>sort</td>
+                    <td>updateTime</td>
+                </tr>
+            </table>
+        </th>
+        <th>market<br>Price</th>
+        <th>sales<br>Price</th>
+        <th>stock<br>Num</th>
+        <th>false<br>Num</th>
+    </tr>
+</table>
+</body>
+</html>
